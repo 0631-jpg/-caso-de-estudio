@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Proyecto Bootstrap</title>
+  <link rel="stylesheet" href="./css/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Álbumes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Canciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Artistas</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Géneros</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pop</a></li>
+              <li><a class="dropdown-item" href="#">Rock</a></li>
+              <li><a class="dropdown-item" href="#">Baladas</a></li>
+              <li><a class="dropdown-item" href="#">Jazz</a></li>
+              <li><a class="dropdown-item" href="#">Clásica</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cerrar sesión</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar álbumes o canciones" />
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Botones de colapso -->
+  <div class="container my-4">
+    <div class="d-flex gap-2">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#info" role="button">Mostrar Info</a>
+      <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#info">Alternar Info</button>
+    </div>
+    <div class="collapse mt-3" id="info">
+      <div class="card card-body">
+        Este contenido se muestra cuando se activa el botón de colapso.
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjetas con rejilla -->
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <!-- Tarjeta Álbum 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/1200x630bb.jpg" class="card-img-top" alt="Imagen Álbum 1" />
+          <div class="card-body">
+            <h5 class="card-title">Thriller</h5>
+            <p class="card-text">
+              <strong>Año:</strong> 1982<br>
+              <strong>Descripción:</strong> Álbum icónico del pop.<br>
+              <strong>Artistas:</strong> Michael Jackson<br>
+              <strong>Medio:</strong> CD
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Álbum 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/a1d163923362f37d39d70629ad58c32b.jpg" class="card-img-top" alt="Imagen Álbum 2" />
+          <div class="card-body">
+            <h5 class="card-title">Back in Black</h5>
+            <p class="card-text">
+              <strong>Año:</strong> 1980<br>
+              <strong>Descripción:</strong> Álbum de hard rock.<br>
+              <strong>Artistas:</strong> AC/DC<br>
+              <strong>Medio:</strong> Vinilo
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Álbum 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/R-10654583-1501772119-1119.jpg" class="card-img-top" alt="Imagen Álbum 3" />
+          <div class="card-body">
+            <h5 class="card-title">Abbey Road</h5>
+            <p class="card-text">
+              <strong>Año:</strong> 1969<br>
+              <strong>Descripción:</strong> Último álbum grabado por The Beatles.<br>
+              <strong>Artistas:</strong> The Beatles<br>
+              <strong>Medio:</strong> Casete
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Álbum 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/maxresdefault.jpg" class="card-img-top" alt="Imagen Álbum 4" />
+          <div class="card-body">
+            <h5 class="card-title">25</h5>
+            <p class="card-text">
+              <strong>Año:</strong> 2015<br>
+              <strong>Descripción:</strong> Álbum de baladas contemporáneas.<br>
+              <strong>Artistas:</strong> Adele<br>
+              <strong>Medio:</strong> CD
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canción 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/michael-jackson-billie-jean.jpg" class="card-img-top" alt="Imagen Billie Jean" />
+          <div class="card-body">
+            <h5 class="card-title">Billie Jean</h5>
+            <p class="card-text">
+              Duración: 4:54<br />
+              Intérprete: Michael Jackson
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canción 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/9c0513d27bdb0837b8fffc0d4ee6c461fd2ad74916a8afad2d844bbd61aaf289.jpg" class="card-img-top" alt="Imagen Back in Black" />
+          <div class="card-body">
+            <h5 class="card-title">Back in Black</h5>
+            <p class="card-text">
+              Duración: 4:15<br />
+              Intérprete: AC/DC
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canción 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/descarga.jfif" class="card-img-top" alt="Imagen Come Together" />
+          <div class="card-body">
+            <h5 class="card-title">Come Together</h5>
+            <p class="card-text">
+              Duración: 4:20<br />
+              Intérprete: The Beatles
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canción 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/MV5BNTc4ODVkMmMtZWY3NS00OWI4LWE1YmYtN2NkNDA3ZjcyNTkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Imagen Hello" />
+          <div class="card-body">
+            <h5 class="card-title">Hello</h5>
+            <p class="card-text">
+              Duración: 4:55<br />
+              Intérprete: Adele
+            </p>
+            <a href="#" class="btn btn-primary me-2">Escuchar</a>
+            <a href="#" class="btn btn-primary">Agregar a mi lista</a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- cierre de .row -->
+  </div> <!-- cierre de .container -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
